@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  --stripe-background-color: #60267f;
+  --primary-color: #9a54bc;
+  --text-primary-color: #000;
+  --text-secondary-color: #2b0236;
+  --text-white: #fff;
+  --shadow-color: #0000000f;
+}
+
+.stripe {
+  height: 20px;
+  background-color: var(--stripe-background-color);
+  color: var(--text-white);
+  font-size: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.stripe a {
+  color: white;
+  font-size: 6px;
+}
+
+.navbar button {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 700;
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
+  padding: 8px 12px;
+  gap: 4px;
+}
+
+.navbar button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+header {
+  height: 80px;
+  box-shadow: 0px 4px 4px 0px var(--shadow-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  margin-left: 50px;
+}
+
+header .navbar {
+  margin-right: 20px;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 35px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-secondary-color);
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
