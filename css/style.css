@@ -95,6 +95,7 @@ header .navbar {
   align-items: center;
   text-align: center;
   width: 80%;
+  height: 720px;
   margin: auto;
 }
 
@@ -164,4 +165,19 @@ header .navbar {
   padding: 7px 10px;
   position: absolute;
   top: 305px;
+}
+
+.brands .title {
+  text-align: center;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.brands .logos {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  padding-bottom: 80px;
 }
