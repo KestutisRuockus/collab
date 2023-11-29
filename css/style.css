@@ -6,14 +6,15 @@
 }
 
 body {
-  width: 80%;
   margin: auto;
   --stripe-background-color: #60267f;
   --primary-color: #9a54bc;
   --text-primary-color: #000;
   --text-secondary-color: #2b0236;
   --text-white: #fff;
+  --text-gray: #a79d9d;
   --shadow-color: #0000000f;
+  --content-background-color: #f2f2f2;
 }
 
 .stripe {
@@ -32,6 +33,10 @@ body {
   font-size: 6px;
 }
 
+.shadow {
+  box-shadow: 0px 4px 4px 0px var(--shadow-color);
+}
+
 .navbar button {
   background-color: white;
   color: var(--primary-color);
@@ -48,8 +53,9 @@ body {
 }
 
 header {
+  width: 70%;
+  margin: auto;
   height: 49px;
-  box-shadow: 0px 4px 4px 0px var(--shadow-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,17 +173,217 @@ header .navbar {
   top: 305px;
 }
 
-.brands .title {
+.title {
   text-align: center;
   font-size: 21px;
   line-height: 24px;
   font-weight: 500;
-  margin-bottom: 50px;
 }
 
 .brands .logos {
   display: flex;
   justify-content: center;
-  gap: 75px;
+  gap: 150px;
+  margin-top: 50px;
   padding-bottom: 80px;
+}
+
+.collab-app .container {
+  width: 45%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.collab-app .app {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collab-app .app-title {
+  display: flex;
+  background-color: white;
+  padding: 2px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 35px;
+}
+
+.collab-app .vendor {
+  width: 45%;
+  height: 23px;
+  text-align: center;
+  color: var(--text-white);
+  background-color: var(--stripe-background-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 9px;
+}
+
+.collab-app .supervisor {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 9px;
+}
+
+.collab-app .mobile {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45px 30px;
+  border-radius: 50px;
+  box-shadow: inset 10px 6px 10px 10px var(--shadow-color);
+}
+
+.collab-app .app-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.collab-app .content {
+  background-color: var(--content-background-color);
+  font-size: 9px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.collab-app strong {
+  font-weight: 600;
+}
+
+.collab-app span {
+  font-weight: 500;
+}
+
+.mobile .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.mobile .logo {
+  height: 24px;
+}
+
+.mobile .title {
+  font-size: 16px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.mobile .input-row {
+  color: #000000d0;
+  margin-bottom: 12px;
+}
+
+.mobile .input-row h4 {
+  font-size: 12px;
+}
+
+.mobile .input-row label {
+  position: relative;
+}
+
+.mobile .input-row label img {
+  position: absolute;
+  right: 2px;
+  bottom: -6px;
+}
+
+.mobile .input-row input,
+.mobile .collab-id input {
+  width: 100%;
+  margin-top: 4px;
+  text-align: center;
+  height: 22px;
+  color: var(--text-gray);
+  border: 1px solid var(--text-gray);
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.mobile .input-row input::placeholder {
+  color: var(--text-gray);
+}
+
+.mobile .add-member {
+  margin-bottom: 6px;
+}
+
+.mobile .add-member input {
+  border: none;
+  border-bottom: 1px solid rgba(3, 158, 248, 0.671);
+  background: none;
+  font-size: 10px;
+  width: 100%;
+  line-height: 16px;
+}
+
+.mobile .collab-id {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 120px;
+}
+
+.mobile .collab-id button {
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  border: none;
+  border-radius: 4px;
+  color: var(--text-white);
+  font-size: 12px;
+  padding: 0 30px;
+  height: 26px;
+  margin-top: 2px;
+}
+
+.mobile .create-btn {
+  margin-bottom: 40px;
+}
+
+.mobile .create-btn button {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 0;
+  height: 26px;
+}
+
+.mobile ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.mobile li {
+  list-style: none;
 }
