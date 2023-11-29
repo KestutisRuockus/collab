@@ -387,3 +387,20 @@ header .navbar {
 .mobile li {
   list-style: none;
 }
+
+.video {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.video .description {
+  font-size: 10px;
+  line-height: 12px;
+  margin: 15px auto;
+  width: 35%;
+}
+
+.video .video-link .photo {
+  width: 60%;
+  margin-top: 15px;
+}
